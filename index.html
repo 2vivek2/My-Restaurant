@@ -12,18 +12,28 @@
    <div class="container" style="background-image: url(https://images.pexels.com/photos/376464/pexels-photo-376464.jpeg?auto=compress&cs=tinysrgb&w=600);">
 
     <!-- nav-bar starts -->
-
+    <header>
     <div class="nav">
-    
+    <div class="restaurant-logo">FC.</div>
+    <div class="nav-bar">
+        <div id="nav-links" class="nav-links active">
+
         <a href="#">HOME</a>
         <a href="#">ABOUT</a>
         <a href="#">MENU</a>
         <a href="#">CATERING</a>
         <a href="#">CONTACT</a>
         <a href="#">LOG IN</a>
-        <a class="order" href="#">ORDER ONLINE</a>
+        <div class="order-1"><a class="order" href="#">ORDER ONLINE</a></div>
+        </div>
+    </div>
+    <div id="hamburger" class="hamburger">
+        <i class="fa-solid fa-bars"></i>
+       </div>
 </div>
  </div>
+</header>
+
 
    <!-- nav-bar ends -->
 
@@ -169,5 +179,16 @@
 
    <!-- footer ends -->
    <script src="https://kit.fontawesome.com/ff1f765301.js" crossorigin="anonymous"></script>
+
+   <script>
+    const hamBurger = document.getElementById('hamburger')
+    const navLinks = document.getElementById('nav-links')
+
+    hamBurger.addEventListener('click', () =>{
+        hamBurger.classList.toggle('active')
+        navLinks.classList.toggle('active')
+    })
+
+   </script>
 </body>
 </html>

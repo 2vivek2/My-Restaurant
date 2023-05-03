@@ -36,9 +36,39 @@ body{
 
 /* nav-bar starts */
 
+.hamburger{
+    display: none;
+}
+
+.restaurant-logo{
+    font-size: 2.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: cursive;
+    font-weight: 800;
+    margin-right: 100px;
+    background-color:rgb(5, 65, 65) ;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+}
+.nav-links{
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    margin-right: 80px;
+}
+
 .nav{
+    width: 100vw;
+    background-color:#222;
+    height: 70px;
     font-size: 1.1rem;
     display: flex;
+    justify-content: space-around;
+    align-items: center;
     gap: 50px;
     padding: 20px 0 ;
     background-blend-mode: hard-light;
@@ -225,8 +255,6 @@ background-image: linear-gradient(to left, #effcffc5 , #f2fdff);
     background-size: cover;
     height: 250px;
     width: 220px;
-    /* border: 1px solid teal; */
-    /* display: grid; */
     grid-template-columns:repeat(2,1fr);
     grid-area: span2;
     background-blend-mode: hard-light;
@@ -240,7 +268,6 @@ background-image: linear-gradient(to left, #effcffc5 , #f2fdff);
 .images:nth-child(even){
     transition: 2s all ease;
     animation-iteration-count: infinite;
-    /* transform: scale(1.2); */
     animation-name: pop;
     animation-duration: 5s;
     animation-delay: 2s;
@@ -278,14 +305,7 @@ background-image: linear-gradient(to left, #effcffc5 , #f2fdff);
 
 /* Quick search starts */
 
-/* .search{
-    justify-content: center;
-    display: flex;
-    padding-top: 80px;
-} */
-
 .quick-search{
-    /* border: 2px solid red; */
     margin-top: 100px;
     min-height: 70vh;
     justify-content: space-evenly;
@@ -295,7 +315,6 @@ background-image: linear-gradient(to left, #effcffc5 , #f2fdff);
 }
 
 .quick-searches{
-    /* border: 2px solid red; */
     height: 200px;
     width: 180px;
     color: var(--primary-text-color);
@@ -344,19 +363,16 @@ background-image: linear-gradient(to left, #effcffc5 , #f2fdff);
 
 .booking{
     min-height: 85vh;
-    /* margin-top: 20px; */
     gap: 40px;
     background: linear-gradient(to bottom, #0d1b2a, #415a77);
 }
 
 .book-image{
-    /* border: 2px solid green; */
     flex-basis: 50%;
     min-height: 60vh;
 }
 
 .booking-section{
-    /* border: 2px solid blue; */
     flex-basis: 40%;
     min-height: 60vh;
 
@@ -454,7 +470,6 @@ input{
     
 }
 .footer-info a{
-    /* color: black; */
     line-height: 40px;
     font-size: 1.2rem;
 }
