@@ -20,6 +20,7 @@
         gap: 10px;
         text-align: center;
         font-size: 1.5rem;
+        z-index: 50;
     }
     .nav-links.active{
         left: 0;
@@ -40,6 +41,13 @@
         align-items: center;
         padding-right: 10px;
         cursor: pointer;
+    }
+    .hamCut{
+        display: block;
+        color: white;
+        font-size: 2rem;
+        cursor: pointer;
+        
     }
 
     h1{
